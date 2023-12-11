@@ -28,7 +28,7 @@ class DataEntryModel(DataEntryBase):
         from_attributes = True
 class calorieBase(BaseModel):
     food_description:str
-class calorieModel(calorieBase):
+class calorieModel(BaseModel):
     calories:float
 def get_db():
     db = SessionLocal()
@@ -53,9 +53,9 @@ async def list_monthly_data_entry(db:db_dependency,date_start:str="2023-12-01",d
     return monthly_data_entries
 @app.post("/calorie_count/",response_model=calorieModel)
 async def insert_calorieCount(food_description:calorieBase):
-    calories = calorie_count(food_description)
-    return calories
+    calories = calorie_count(food_description.food_description)
+    return {"calories":calories} 
 def main():
-    
+    print(insert_calorieCount("50 gram oats"))
 if __name__=='__main__':
     main()
