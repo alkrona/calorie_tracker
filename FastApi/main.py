@@ -56,6 +56,6 @@ async def insert_calorieCount(food_description:calorieBase):
     calories = calorie_count(food_description.food_description)
     return {"calories":calories} 
 def main():
-    print(insert_calorieCount("50 gram oats"))
+    print(list_monthly_data_entry(db=db_dependency))
 if __name__=='__main__':
     main()
