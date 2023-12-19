@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.sidebar .nav{
+  padding: 0px !important;
+}
+.sidebar ul li a:hover{
+  background-color: blue;
+}

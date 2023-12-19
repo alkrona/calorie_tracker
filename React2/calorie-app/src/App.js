@@ -1,89 +1,13 @@
 import api from "./api";
 import React,{useState,useEffect} from 'react'
-//import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import RangeSlider from 'react-bootstrap-range-slider';
-//import Sidebar from "./sideBar";
-
+import Sidebar from "./sideBar";
+import {BrowserRouter, Routes,Route} from 'react-router-dom';
+import Data from "./Data"
+import DataEntry from "./DataEntry";
 const App = () =>{
-  const[dataEntries,setDataEntries] = useState([]);
-  const[value,setValue] = useState(0);
-  const[calorieText,setCalorieText]=useState({});
-  const[formData,setFormData]= useState({
-    date:new Date().toDateString(),
-    calorie:'',
-    weight:''
-  });
-  const fetchDataEntries = async() => {
-    const response = await api.get('/calorie_entry/');
-    setDataEntries(response.data)
-  };
-  useEffect(() => {
-    fetchDataEntries();
-  },[]);
-
-  const handleInputChange = (event) => {
-    setFormData({
-      ...formData,
-      [event.target.name]:event.target.value,
-
-    });
-  };
-  const handleInputChangeCalorie = (event) => {
-    setCalorieText({
-      ...calorieText,
-      [event.target.name]:event.target.value,
-
-    });
-  };
-  const handleFormSubmit = async(event) =>{
-    event.preventDefault();
-    await api.post('/calorieEntry/',formData);
-    fetchDataEntries();
-    setFormData({
-      date:'',
-      calorie:'',
-      weight:''
-    });
-  };
-  const handleCalorieTextClick = (e) => {
-    if (e === "What all did you eat today") {
-      setCalorieText((calorieText) => ({
-        ...calorieText,
-        calorieText: '',
-      }));
-    }
-  };
-  
-  const handleCalorieCount = async (event) => {
-    event.preventDefault();
-    console.log(calorieText);
-  
-    try {
-      
-      const calorie_response = await api.post('/calorie_count/',{"food_description": calorieText.calorieText})
-      console.log(calorie_response.data.calories);
-      setCalorieText(calorieText => ({
-        ...calorieText,
-        calorieText: String(calorie_response.data.calories),
-
-      }));
-      setFormData(formData =>({
-        ...formData,
-        formData :String(calorie_response.data.calories) ,
-  
-      }));
-
-
-
-      
-
-    } catch (error) {
-      console.error("Error in handleCalorieCount:", error);
-    }
-  };
-  
-  
-  return(
+return(
     <div>
     <nav className='navbar navbar-dark bg-primary'> 
       <div className='container-fluid'>
@@ -93,10 +17,21 @@ const App = () =>{
       </div>
 
     </nav>
-    
+    <BrowserRouter>
+    <div className="d-flex">
+      <div className="col-auto">
+        <Sidebar/>
+      </div>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/data" element = {<DataEntry/>}></Route>
+          <Route path="/history" element = {<DataEntry/>}></Route>
+        </Routes>
+      </div>
 
 
-    <div className='container'>
+    {/* <div className='container'>
       <form onSubmit={handleFormSubmit}>
         <div className='mb-3 mt-3'>
           <label htmlFor='date' className='form-label'>
@@ -142,12 +77,21 @@ const App = () =>{
           Submit
         </button>
       </form>
-    </div>
+    </div> */}
   </div>
-
+  </BrowserRouter>
+  </div>
 
   );
 }
 
 
 export default App;
+function Home(){
+  return <h2> Home</h2>
+}
+// function Data(){
+//   return(<h2> Data</h2>
+    
+//   )
+// }
