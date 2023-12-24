@@ -1,0 +1,46 @@
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:INSERT INTO user_account (name, password, email) VALUES (?, ?, ?)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00055s] ('Joel', '2222', 'joel@gmail.com')
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:None
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00043s] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.001416s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00035s] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.001192s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:INSERT INTO calorie (weight, date, calories_today, user_id) VALUES (?, ?, ?, ?)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00032s] (70.0, '2023-12-12', 2500.0, 2)
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:None
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT calorie.calories_today 
+FROM calorie 
+WHERE 1 = 1
+INFO:sqlalchemy.engine.Engine:[generated in 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:[3329, 2865, 2680, 3612, 2429, 2621, 2729, 2975, 2699, 2040, 3224, 3607, 3467, 2049, 2761, 2849, 2367, 2005, 2630, 2215, 2174, 3444, 2432, 2263, 3230, 3199, 2672, 3604, 3866, 3536, 3124, 2392, 3692, 3118, 3141, 3263, 2663, 2725, 3676, 2603, 2969, 3076, 3574, 2397, 2246, 3537, 2010, 3266, 2315, 2005, 2432, 3734, 3659, 2922, 3636, 2599, 3009, 3504, 2629, 3159, 2228, 3193, 3295, 2908, 3897, 2489, 2524, 2310, 2691, 2958, 2792, 3154, 2780, 3605, 2096, 3886, 2592, 3322, 2851, 3607, 2589, 3352, 3256, 2251, 3957, 3828, 3115, 3784, 2130, 3492, 3404, 2876, 2532, 2888, 3295, 3011, 3983, 3875, 3227, 2405, 3517, 2300, 2500]
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT calorie.calories_today, calorie.date 
+FROM calorie 
+WHERE 1 = 1
+INFO:sqlalchemy.engine.Engine:[generated in 0.00030s] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:[3329, 2865, 2680, 3612, 2429, 2621, 2729, 2975, 2699, 2040, 3224, 3607, 3467, 2049, 2761, 2849, 2367, 2005, 2630, 2215, 2174, 3444, 2432, 2263, 3230, 3199, 2672, 3604, 3866, 3536, 3124, 2392, 3692, 3118, 3141, 3263, 2663, 2725, 3676, 2603, 2969, 3076, 3574, 2397, 2246, 3537, 2010, 3266, 2315, 2005, 2432, 3734, 3659, 2922, 3636, 2599, 3009, 3504, 2629, 3159, 2228, 3193, 3295, 2908, 3897, 2489, 2524, 2310, 2691, 2958, 2792, 3154, 2780, 3605, 2096, 3886, 2592, 3322, 2851, 3607, 2589, 3352, 3256, 2251, 3957, 3828, 3115, 3784, 2130, 3492, 3404, 2876, 2532, 2888, 3295, 3011, 3983, 3875, 3227, 2405, 3517, 2300, 2500]

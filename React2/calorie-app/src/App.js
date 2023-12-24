@@ -5,6 +5,7 @@ import RangeSlider from 'react-bootstrap-range-slider';
 import Sidebar from "./sideBar";
 import {BrowserRouter, Routes,Route} from 'react-router-dom';
 import Data from "./Data"
+import Login from "./components/Login";
 import DataEntry from "./DataEntry";
 const App = () =>{
 return(
@@ -26,7 +27,7 @@ return(
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/data" element = {<DataEntry/>}></Route>
-          <Route path="/history" element = {<DataEntry/>}></Route>
+          <Route path="/history" element = {<Login/>}></Route>
         </Routes>
       </div>
 
