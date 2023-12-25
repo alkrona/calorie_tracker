@@ -1,25 +1,20 @@
 import api from "./api";
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useContext} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import RangeSlider from 'react-bootstrap-range-slider';
-
+import { LoginContext } from "./contexts/loginContext";
 const DataEntry =()=>{
-
+    const {userID} = useContext(LoginContext)
     const[dataEntries,setDataEntries] = useState([]);
     const[value,setValue] = useState(0);
     const[calorieText,setCalorieText]=useState({});
     const[formData,setFormData]= useState({
       date:new Date().toDateString(),
+      user_id:userID,
       calorie:'',
       weight:''
     });
-    const fetchDataEntries = async() => {
-      const response = await api.get('/calorie_entry/');
-      setDataEntries(response.data)
-    };
-    useEffect(() => {
-      fetchDataEntries();
-    },[]);
+   
   
     const handleInputChange = (event) => {
       setFormData({
@@ -37,13 +32,15 @@ const DataEntry =()=>{
     };
     const handleFormSubmit = async(event) =>{
       event.preventDefault();
-      await api.post('/calorieEntry/',formData);
-      fetchDataEntries();
+      await api.post('/calorie_data_entry/',formData);
+      
       setFormData({
         date:'',
+        
         calorie:'',
         weight:''
       });
+      console.log(userID);
     };
     const handleCalorieTextClick = (e) => {
       if (e === "What all did you eat today") {

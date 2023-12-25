@@ -4,10 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import RangeSlider from 'react-bootstrap-range-slider';
 import Sidebar from "./sideBar";
 import {BrowserRouter, Routes,Route} from 'react-router-dom';
-import Data from "./Data"
+import Data from "./Data";
 import Login from "./components/Login";
+
 import DataEntry from "./DataEntry";
+import { LoginContext } from "./contexts/loginContext";
+import Graph from "./components/graph";
 const App = () =>{
+  const [userID,setUserID] = useState("");
 return(
     <div>
     <nav className='navbar navbar-dark bg-primary'> 
@@ -24,11 +28,13 @@ return(
         <Sidebar/>
       </div>
       <div>
+        <LoginContext.Provider value={{userID,setUserID}}>
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
+          <Route path="/" element={<Graph/>}></Route>
           <Route path="/data" element = {<DataEntry/>}></Route>
           <Route path="/history" element = {<Login/>}></Route>
         </Routes>
+        </LoginContext.Provider>
       </div>
 
 

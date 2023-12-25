@@ -44,3 +44,320 @@ WHERE 1 = 1
 INFO:sqlalchemy.engine.Engine:[generated in 0.00030s] ()
 INFO:sqlalchemy.engine.Engine:ROLLBACK
 INFO:root:[3329, 2865, 2680, 3612, 2429, 2621, 2729, 2975, 2699, 2040, 3224, 3607, 3467, 2049, 2761, 2849, 2367, 2005, 2630, 2215, 2174, 3444, 2432, 2263, 3230, 3199, 2672, 3604, 3866, 3536, 3124, 2392, 3692, 3118, 3141, 3263, 2663, 2725, 3676, 2603, 2969, 3076, 3574, 2397, 2246, 3537, 2010, 3266, 2315, 2005, 2432, 3734, 3659, 2922, 3636, 2599, 3009, 3504, 2629, 3159, 2228, 3193, 3295, 2908, 3897, 2489, 2524, 2310, 2691, 2958, 2792, 3154, 2780, 3605, 2096, 3886, 2592, 3322, 2851, 3607, 2589, 3352, 3256, 2251, 3957, 3828, 3115, 3784, 2130, 3492, 3404, 2876, 2532, 2888, 3295, 3011, 3983, 3875, 3227, 2405, 3517, 2300, 2500]
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00028s] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.00127s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 64.4s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 64.4s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 228.2s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 228.2s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 253.9s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 253.9s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 264.3s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 264.3s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 583.3s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 583.3s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 4.221e+04s ago] ('', '')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:invalid user
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:INSERT INTO user_account (name, password, email) VALUES (?, ?, ?)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00052s] ('Kiranj', '1113', 'kiranjais6@gmail.com')
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:INSERT INTO calorie (weight, date, calories_today, user_id) VALUES (?, ?, ?, ?)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00224s] (79.0, '2023-12-25', 2551.0, 1)
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:None
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 4.56e+04s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 4.56e+04s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:INSERT INTO calorie (weight, date, calories_today, user_id) VALUES (?, ?, ?, ?)
+INFO:sqlalchemy.engine.Engine:[cached since 1606s ago] (76.6, '2023-12-27', 2588.0, 1)
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:None
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 4.707e+04s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 4.707e+04s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 4.723e+04s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 4.723e+04s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 4.759e+04s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 4.759e+04s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00037s] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.002407s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00091s] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.00458s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT calorie.calories_today, calorie.date 
+FROM calorie 
+WHERE 1 = 1
+INFO:sqlalchemy.engine.Engine:[generated in 0.00040s] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:[3329, 2865, 2680, 3612, 2429, 2621, 2729, 2975, 2699, 2040, 3224, 3607, 3467, 2049, 2761, 2849, 2367, 2005, 2630, 2215, 2174, 3444, 2432, 2263, 3230, 3199, 2672, 3604, 3866, 3536, 3124, 2392, 3692, 3118, 3141, 3263, 2663, 2725, 3676, 2603, 2969, 3076, 3574, 2397, 2246, 3537, 2010, 3266, 2315, 2005, 2432, 3734, 3659, 2922, 3636, 2599, 3009, 3504, 2629, 3159, 2228, 3193, 3295, 2908, 3897, 2489, 2524, 2310, 2691, 2958, 2792, 3154, 2780, 3605, 2096, 3886, 2592, 3322, 2851, 3607, 2589, 3352, 3256, 2251, 3957, 3828, 3115, 3784, 2130, 3492, 3404, 2876, 2532, 2888, 3295, 3011, 3983, 3875, 3227, 2405, 3517, 2300, 2500, 2551, 2588]
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT calorie.calories_today, calorie.date 
+FROM calorie 
+WHERE 1 = 1
+INFO:sqlalchemy.engine.Engine:[generated in 0.00040s] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00041s] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.001727s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT calorie.calories_today, calorie.date 
+FROM calorie 
+WHERE 1 = 1
+INFO:sqlalchemy.engine.Engine:[cached since 3005s ago] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT calorie.calories_today, calorie.date 
+FROM calorie 
+WHERE 1 = 1
+INFO:sqlalchemy.engine.Engine:[cached since 3060s ago] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT calorie.calories_today, calorie.date 
+FROM calorie 
+WHERE 1 = 1
+INFO:sqlalchemy.engine.Engine:[cached since 3074s ago] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT calorie.calories_today, calorie.date 
+FROM calorie 
+WHERE 1 = 1
+INFO:sqlalchemy.engine.Engine:[generated in 0.00020s] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT calorie.weight, calorie.date 
+FROM calorie 
+WHERE 1 = 1
+INFO:sqlalchemy.engine.Engine:[generated in 0.00054s] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:[71.20815904195517, 78.26535249536535, 72.65828225396473, 74.36296750432304, 70.2092095238905, 73.94229201855886, 82.5323549304288, 82.51527085662575, 83.92481288444193, 73.71098516443627, 73.13777097188598, 77.6313264091079, 76.42827753897787, 78.70557100805824, 83.8148931775982, 82.80310223262336, 72.3489012578478, 80.955404627988, 71.35895105815591, 75.57191174681935, 84.48678476091726, 75.07454229264773, 82.19576904043215, 75.22699476365008, 73.61009961318726, 73.88537810797384, 79.36384255186394, 79.7666231315685, 71.0780268150157, 71.98502774413706, 75.02736396454067, 84.13414231922931, 73.25949219305048, 73.39611048557555, 84.58251258389059, 80.15711808425986, 83.03099636364878, 83.23325101832027, 84.22286534836391, 78.54683733253742, 72.95160140251922, 71.4452192104815, 84.36439107597856, 81.9068590090499, 75.5684614295488, 77.74157317713293, 79.13375439245762, 71.5202825126961, 82.06801744472085, 80.10467626253036, 83.27999833605254, 81.56136300360073, 77.92063744060759, 84.27163888588545, 77.66574381099434, 77.54997657083604, 74.27614336489823, 82.26403229591438, 80.7152112335079, 80.2380654259032, 80.21028236862897, 77.62097165583377, 70.6639876664233, 76.9426771761513, 84.4313083952861, 82.35670873456772, 71.10144662676609, 74.25923169350838, 79.90638957451961, 78.62156732291254, 71.9641954027888, 77.54154318989691, 74.7829488697917, 74.02001218796548, 71.50026365859895, 78.98545942924324, 78.04758652109196, 71.61827626019176, 82.50069527697165, 82.46184586886044, 81.83120067886763, 77.46031309557353, 84.52146238254713, 71.14586696067992, 75.78333732718175, 75.93642568676312, 72.07421709905894, 83.66027873211854, 81.2388499267994, 83.81507945204342, 77.5002977453137, 74.53147057690282, 72.73275188953272, 72.34737417772442, 76.64435235851036, 79.18305858818404, 73.93596788394991, 76.52752814129975, 75.14325610383807, 72.02769621209416, 83.10033641272231, 75.0, 70.0, 79.0, 76.6]
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00051s] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.002818s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT calorie.calories_today, calorie.date 
+FROM calorie 
+WHERE 1 = 1
+INFO:sqlalchemy.engine.Engine:[cached since 49.11s ago] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT calorie.weight, calorie.date 
+FROM calorie 
+WHERE 1 = 1
+INFO:sqlalchemy.engine.Engine:[cached since 48.97s ago] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:[71.20815904195517, 78.26535249536535, 72.65828225396473, 74.36296750432304, 70.2092095238905, 73.94229201855886, 82.5323549304288, 82.51527085662575, 83.92481288444193, 73.71098516443627, 73.13777097188598, 77.6313264091079, 76.42827753897787, 78.70557100805824, 83.8148931775982, 82.80310223262336, 72.3489012578478, 80.955404627988, 71.35895105815591, 75.57191174681935, 84.48678476091726, 75.07454229264773, 82.19576904043215, 75.22699476365008, 73.61009961318726, 73.88537810797384, 79.36384255186394, 79.7666231315685, 71.0780268150157, 71.98502774413706, 75.02736396454067, 84.13414231922931, 73.25949219305048, 73.39611048557555, 84.58251258389059, 80.15711808425986, 83.03099636364878, 83.23325101832027, 84.22286534836391, 78.54683733253742, 72.95160140251922, 71.4452192104815, 84.36439107597856, 81.9068590090499, 75.5684614295488, 77.74157317713293, 79.13375439245762, 71.5202825126961, 82.06801744472085, 80.10467626253036, 83.27999833605254, 81.56136300360073, 77.92063744060759, 84.27163888588545, 77.66574381099434, 77.54997657083604, 74.27614336489823, 82.26403229591438, 80.7152112335079, 80.2380654259032, 80.21028236862897, 77.62097165583377, 70.6639876664233, 76.9426771761513, 84.4313083952861, 82.35670873456772, 71.10144662676609, 74.25923169350838, 79.90638957451961, 78.62156732291254, 71.9641954027888, 77.54154318989691, 74.7829488697917, 74.02001218796548, 71.50026365859895, 78.98545942924324, 78.04758652109196, 71.61827626019176, 82.50069527697165, 82.46184586886044, 81.83120067886763, 77.46031309557353, 84.52146238254713, 71.14586696067992, 75.78333732718175, 75.93642568676312, 72.07421709905894, 83.66027873211854, 81.2388499267994, 83.81507945204342, 77.5002977453137, 74.53147057690282, 72.73275188953272, 72.34737417772442, 76.64435235851036, 79.18305858818404, 73.93596788394991, 76.52752814129975, 75.14325610383807, 72.02769621209416, 83.10033641272231, 75.0, 70.0, 79.0, 76.6]
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 69.67s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 69.67s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT calorie.weight, calorie.date 
+FROM calorie 
+WHERE 1 = 1
+INFO:sqlalchemy.engine.Engine:[cached since 117.8s ago] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:[71.20815904195517, 78.26535249536535, 72.65828225396473, 74.36296750432304, 70.2092095238905, 73.94229201855886, 82.5323549304288, 82.51527085662575, 83.92481288444193, 73.71098516443627, 73.13777097188598, 77.6313264091079, 76.42827753897787, 78.70557100805824, 83.8148931775982, 82.80310223262336, 72.3489012578478, 80.955404627988, 71.35895105815591, 75.57191174681935, 84.48678476091726, 75.07454229264773, 82.19576904043215, 75.22699476365008, 73.61009961318726, 73.88537810797384, 79.36384255186394, 79.7666231315685, 71.0780268150157, 71.98502774413706, 75.02736396454067, 84.13414231922931, 73.25949219305048, 73.39611048557555, 84.58251258389059, 80.15711808425986, 83.03099636364878, 83.23325101832027, 84.22286534836391, 78.54683733253742, 72.95160140251922, 71.4452192104815, 84.36439107597856, 81.9068590090499, 75.5684614295488, 77.74157317713293, 79.13375439245762, 71.5202825126961, 82.06801744472085, 80.10467626253036, 83.27999833605254, 81.56136300360073, 77.92063744060759, 84.27163888588545, 77.66574381099434, 77.54997657083604, 74.27614336489823, 82.26403229591438, 80.7152112335079, 80.2380654259032, 80.21028236862897, 77.62097165583377, 70.6639876664233, 76.9426771761513, 84.4313083952861, 82.35670873456772, 71.10144662676609, 74.25923169350838, 79.90638957451961, 78.62156732291254, 71.9641954027888, 77.54154318989691, 74.7829488697917, 74.02001218796548, 71.50026365859895, 78.98545942924324, 78.04758652109196, 71.61827626019176, 82.50069527697165, 82.46184586886044, 81.83120067886763, 77.46031309557353, 84.52146238254713, 71.14586696067992, 75.78333732718175, 75.93642568676312, 72.07421709905894, 83.66027873211854, 81.2388499267994, 83.81507945204342, 77.5002977453137, 74.53147057690282, 72.73275188953272, 72.34737417772442, 76.64435235851036, 79.18305858818404, 73.93596788394991, 76.52752814129975, 75.14325610383807, 72.02769621209416, 83.10033641272231, 75.0, 70.0, 79.0, 76.6]
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 113.5s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 113.5s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT calorie.weight, calorie.date 
+FROM calorie 
+WHERE 1 = 1
+INFO:sqlalchemy.engine.Engine:[cached since 162s ago] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:[71.20815904195517, 78.26535249536535, 72.65828225396473, 74.36296750432304, 70.2092095238905, 73.94229201855886, 82.5323549304288, 82.51527085662575, 83.92481288444193, 73.71098516443627, 73.13777097188598, 77.6313264091079, 76.42827753897787, 78.70557100805824, 83.8148931775982, 82.80310223262336, 72.3489012578478, 80.955404627988, 71.35895105815591, 75.57191174681935, 84.48678476091726, 75.07454229264773, 82.19576904043215, 75.22699476365008, 73.61009961318726, 73.88537810797384, 79.36384255186394, 79.7666231315685, 71.0780268150157, 71.98502774413706, 75.02736396454067, 84.13414231922931, 73.25949219305048, 73.39611048557555, 84.58251258389059, 80.15711808425986, 83.03099636364878, 83.23325101832027, 84.22286534836391, 78.54683733253742, 72.95160140251922, 71.4452192104815, 84.36439107597856, 81.9068590090499, 75.5684614295488, 77.74157317713293, 79.13375439245762, 71.5202825126961, 82.06801744472085, 80.10467626253036, 83.27999833605254, 81.56136300360073, 77.92063744060759, 84.27163888588545, 77.66574381099434, 77.54997657083604, 74.27614336489823, 82.26403229591438, 80.7152112335079, 80.2380654259032, 80.21028236862897, 77.62097165583377, 70.6639876664233, 76.9426771761513, 84.4313083952861, 82.35670873456772, 71.10144662676609, 74.25923169350838, 79.90638957451961, 78.62156732291254, 71.9641954027888, 77.54154318989691, 74.7829488697917, 74.02001218796548, 71.50026365859895, 78.98545942924324, 78.04758652109196, 71.61827626019176, 82.50069527697165, 82.46184586886044, 81.83120067886763, 77.46031309557353, 84.52146238254713, 71.14586696067992, 75.78333732718175, 75.93642568676312, 72.07421709905894, 83.66027873211854, 81.2388499267994, 83.81507945204342, 77.5002977453137, 74.53147057690282, 72.73275188953272, 72.34737417772442, 76.64435235851036, 79.18305858818404, 73.93596788394991, 76.52752814129975, 75.14325610383807, 72.02769621209416, 83.10033641272231, 75.0, 70.0, 79.0, 76.6]
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 215s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 215s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT calorie.calories_today, calorie.date 
+FROM calorie 
+WHERE 1 = 1
+INFO:sqlalchemy.engine.Engine:[cached since 263.9s ago] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT calorie.weight, calorie.date 
+FROM calorie 
+WHERE 1 = 1
+INFO:sqlalchemy.engine.Engine:[cached since 272.4s ago] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:[71.20815904195517, 78.26535249536535, 72.65828225396473, 74.36296750432304, 70.2092095238905, 73.94229201855886, 82.5323549304288, 82.51527085662575, 83.92481288444193, 73.71098516443627, 73.13777097188598, 77.6313264091079, 76.42827753897787, 78.70557100805824, 83.8148931775982, 82.80310223262336, 72.3489012578478, 80.955404627988, 71.35895105815591, 75.57191174681935, 84.48678476091726, 75.07454229264773, 82.19576904043215, 75.22699476365008, 73.61009961318726, 73.88537810797384, 79.36384255186394, 79.7666231315685, 71.0780268150157, 71.98502774413706, 75.02736396454067, 84.13414231922931, 73.25949219305048, 73.39611048557555, 84.58251258389059, 80.15711808425986, 83.03099636364878, 83.23325101832027, 84.22286534836391, 78.54683733253742, 72.95160140251922, 71.4452192104815, 84.36439107597856, 81.9068590090499, 75.5684614295488, 77.74157317713293, 79.13375439245762, 71.5202825126961, 82.06801744472085, 80.10467626253036, 83.27999833605254, 81.56136300360073, 77.92063744060759, 84.27163888588545, 77.66574381099434, 77.54997657083604, 74.27614336489823, 82.26403229591438, 80.7152112335079, 80.2380654259032, 80.21028236862897, 77.62097165583377, 70.6639876664233, 76.9426771761513, 84.4313083952861, 82.35670873456772, 71.10144662676609, 74.25923169350838, 79.90638957451961, 78.62156732291254, 71.9641954027888, 77.54154318989691, 74.7829488697917, 74.02001218796548, 71.50026365859895, 78.98545942924324, 78.04758652109196, 71.61827626019176, 82.50069527697165, 82.46184586886044, 81.83120067886763, 77.46031309557353, 84.52146238254713, 71.14586696067992, 75.78333732718175, 75.93642568676312, 72.07421709905894, 83.66027873211854, 81.2388499267994, 83.81507945204342, 77.5002977453137, 74.53147057690282, 72.73275188953272, 72.34737417772442, 76.64435235851036, 79.18305858818404, 73.93596788394991, 76.52752814129975, 75.14325610383807, 72.02769621209416, 83.10033641272231, 75.0, 70.0, 79.0, 76.6]
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00057s] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:SELECT user_account.id 
+FROM user_account 
+WHERE user_account.name = ? AND user_account.password = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.001556s ago] ('Kiran', '1111')
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:root:1
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT calorie.weight, calorie.date 
+FROM calorie 
+WHERE 1 = 1
+INFO:sqlalchemy.engine.Engine:[generated in 0.00048s] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT calorie.calories_today, calorie.date 
+FROM calorie 
+WHERE 1 = 1
+INFO:sqlalchemy.engine.Engine:[generated in 0.00021s] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK

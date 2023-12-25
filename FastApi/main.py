@@ -12,7 +12,7 @@ logging.basicConfig(filename="logger.log",level=logging.INFO)
 
 app = FastAPI()
 origins = [
-    'http://localhost:3000',
+    'http://localhost:3001',
 ]
 app.add_middleware(
                     CORSMiddleware,
@@ -51,6 +51,8 @@ class DataEntryModel(DataEntryBase):
         from_attributes = True
 class calorieBase(BaseModel):
     food_description:str
+class userBase(BaseModel):
+    user_id:str
 class calorieModel(BaseModel):
     calories:float
 """
@@ -91,12 +93,14 @@ async def calorie_data_entry(calorie_entry:DataEntryBaseAdv):
         )
     logging.info(calorie_entry)
 @app.post("/retrive_calorie_data/")
-async def retrive_calorie_data(user_id:str):
-    calorie_data = db_functions.retrive_lifetime_calorie_data(int(user_id))
+async def retrive_calorie_data(user_id:userBase):
+    calorie_data = db_functions.retrive_lifetime_calorie_data(int(user_id.user_id))
+    return(calorie_data)
     logging.info(calorie_data)
 @app.post("/retrive_weight_data/")
-async def retrive_weight_data(user_id:str):
-    weight_data = db_functions.retrive_lifetime_weight_data(int(user_id))
+async def retrive_weight_data(user_id:userBase):
+    weight_data = db_functions.retrive_lifetime_weight_data(int(user_id.user_id))
+    return(weight_data)
     logging.info(weight_data)
 """
 def main():
